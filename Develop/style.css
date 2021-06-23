@@ -118,4 +118,35 @@ button[disabled] {
   overflow: hidden;
 }
 
+@media screen  and (max-width: 980px) {
+  body {
+    max-width: 980px;
+  } 
+  .wrapper {
+    width: 100%;
+  }
+}
 
+@media screen  and (max-width: 786px) {
+  body {
+    max-width: 786px;
+  } 
+  .wrapper {
+    width: 100%;
+  }
+}
+
+@media screen  and (max-width: 640px) {
+  body {
+    max-width: 640px;
+  } 
+  .wrapper {
+    width: 100%;
+  }
+  .btn {
+    margin-top: 20px;
+  }
+  #generate {
+    margin-left: 22%;
+  }
+}

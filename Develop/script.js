@@ -1,11 +1,6 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-get.addEventListener("click", function () {
-  ps = generatePassword();
-  document.getElementById("password").placeholder = ps;
-})
-
 var enter;
 var confirmNumber;
 var confirmCharacter;
@@ -103,6 +98,16 @@ function generatePassword() {
 
     // password variable is an array placeholder for user generated amount of length
     var password = [];
+
+    // Random selection for all variables: 
+    for (var i = 0; i < enter; i++) {
+        var pickChoices = choices[Math.floor(Math.random() * choices.length)];
+        password.push(pickChoices);
+    }
+    // Converts password to a string
+    var ps = password.join("");
+    UserInput(ps);
+    return ps;
 }
 
 // This puts the password value into the textbox
